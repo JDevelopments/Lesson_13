@@ -1,0 +1,86 @@
+@import url(reset.css);
+
+
+.wraper{
+   overflow: hidden;
+   min-height: 100%;
+   position: relative;
+}
+
+body{
+   background-color: rgb(47, 49, 54)
+}
+
+.page{
+   height: 100vh;
+   position:relative;
+}
+
+.page__container{
+   width: 600px;
+   height: 600px;
+   border: 1px solid black;
+   position: relative;
+   margin: 0 auto;
+   top: 200px;
+   background-color: rgb(38, 38, 38);
+}
+
+.line{
+   width: 100px;
+   height: 2px;
+   opacity: 1;
+   background-color: tomato;
+   position: absolute;
+   left: 200px;
+   top: -2px;
+
+   animation: line-foll 2.5s cubic-bezier(1, 0.06, 1, 0.99)  16s forwards
+            , step 4.2s  ease-in-out 11.5s forwards
+            , moow-line-left 1.5s cubic-bezier(1, 0.18, 0.97, 1.18) 3s forwards;
+}
+
+.page__container{
+     animation: gump-page__container 0.5s ease-in 11s forwards
+   , rotate-right90-page__container 7s linear 1s;
+}
+
+
+@keyframes moow-line-left{
+   100%{left: 0px;}
+}
+
+@keyframes rotate-right90-page__container{
+   40%{transform: rotate(-25deg);}
+   60%{transform: rotate(-25deg);}
+}
+
+@keyframes gump-page__container{
+   50%{ top: 100px;} 
+   100%{top: 200px;}
+}
+
+@keyframes step{
+   0%{transform-origin: 100% 0%;}
+   28.57%{transform: rotate(-165deg);}
+   52.37%{transform: rotate(-30deg);}
+   71.42%{transform: rotate(-135deg);}
+   85.71%{transform: rotate(-60deg);}
+   95.23%{transform: rotate(-105deg);}
+   100%{transform-origin: 100% 0%;
+        transform: rotate(-90deg);}
+}
+
+@keyframes line-foll {
+   50%{box-shadow: 20px 0px 10px orange;}
+   100%{ 
+         opacity: 0;
+         top: 500px;  
+      }
+}
+
+
+
+
+
+
