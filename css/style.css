@@ -41,7 +41,7 @@ body{
 }
 
 .page__container{
-     animation: gump-page__container 0.5s ease-in 11s forwards
+     animation: gump-page__container 0.5s ease-in 9s forwards
    , rotate-right90-page__container 7s linear 1s;
 }
 
