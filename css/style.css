@@ -35,7 +35,7 @@ body{
    left: 200px;
    top: -2px;
 
-   animation: line-foll 2.5s cubic-bezier(1, 0.06, 1, 0.99)  16s forwards
+   animation: line-foll 2.5s cubic-bezier(1, 0.06, 1, 0.99)  14s forwards
             , step 4.2s  ease-in-out 9.5s forwards
             , moow-line-left 1.5s cubic-bezier(1, 0.18, 0.97, 1.18) 3s forwards;
 }
